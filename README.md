@@ -1,2 +1,2 @@
-# tarot_one_full_v2
+# tarot_oneoracle_01
 Created with CodeSandbox

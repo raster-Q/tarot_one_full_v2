@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tarot_oneoracle_01</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div>
+      <table align="center" border="0" width="100%" class="wide">
+        <tr>
+          <td colspan="2"><h3>ワンオラクル (簡易版※1)</h3></td>
+        </tr>
+        <tr>
+          <td rowspan="10" id="cardImg"></td>
+          <td width="120px">
+            <button
+              type="button"
+              name="shuffleButton"
+              id="shuffleButton"
+              value="1"
+              class="button"
+            >
+              シャッフル
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" name="resetButton" id="resetButton" value="1" class="button">
+              リセット
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <button  type="button" name="dealButton" id="dealButton" value="1"class="button" >
+              1枚引く
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <form name="selectPosition">
+              <input type="radio" name="positions" value="0" checked />正
+              <input type="radio" name="positions" value="1" />正＆逆
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="notes" id="notes1"></td>
+        </tr>
+        <tr>
+          <td class="notes" id="notes2"></td>
+        </tr>
+        <td></td>
+        <tr>
+          <td id="cardName"></td>
+          <td id="cardPosition"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="notes" id="notes3"></td>
+        </tr>
+      </table>
+    </div>
+      <table align="center" border="0" width="100%" class="wide" id="spread">
+        <tr>
+          <td rowspan="3" id="oracle1" class="oracle"></td>          
+          <td rowspan="3" id="oracle2" class="oracle"></td>
+          <td rowspan="3" id="oracle3" class="oracle"></td>
+          <td  colspan="2" id="nowDate"></td>
+        </td>
+        <tr><td colspan="2" id="spreadNumber" ></td></tr>
+        <tr>
+          <td>
+            <button type="button" name="leftButton" id="leftButton" value="0">◀</button>
+          </td>
+          <td><button type="button" name="rightButton" id="rightButton" value="0" >▶</button></td></tr>  
+        </tr>
+      </table>
+
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
