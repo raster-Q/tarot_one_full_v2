@@ -30,12 +30,12 @@ h3 {
   transform: scale(1, 1);
 }
 
-#right {
+.right {
   width: 95%;
   transform: scale(1, 0.9);
 }
 
-#reverse {
+.reverse {
   width: 95%;
   transform: scale(-1, -0.9);
 }
